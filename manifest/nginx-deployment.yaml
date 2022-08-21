@@ -14,7 +14,9 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx-proxy:latest
+        image: 192.168.10.121:30000/nginx-proxy:1.0.3
         ports:
         - containerPort: 80
-
+      restartPolicy: Always
+      imagePullSecrets:
+        - name: regcred
