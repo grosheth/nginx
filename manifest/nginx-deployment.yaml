@@ -28,7 +28,7 @@ spec:
         - env:
             - name: NGINX_PORT
               value: "80"
-          image: 192.168.10.121:30000/nginx-proxy:1.0.5
+          image: 192.168.10.121:30000/nginx-proxy:1.0.6
           name: nginx
           ports:
             - containerPort: 80
